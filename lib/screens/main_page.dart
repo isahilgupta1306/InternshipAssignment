@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:internship_assignment/screens/achievemets_page.dart';
 import 'package:internship_assignment/screens/group_page.dart';
 import 'package:internship_assignment/screens/home_page.dart';
-import 'package:internship_assignment/screens/leaderBoard_page.dart';
+import 'package:internship_assignment/screens/leaderboard_page.dart';
 import 'package:internship_assignment/screens/profile_page.dart';
 import 'package:internship_assignment/utils.dart';
 
@@ -16,11 +15,11 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   final List<Widget> _children = [
-    HomePage(),
-    AchievementPage(),
-    LeaderBoardPage(),
-    GroupPage(),
-    ProfilePage(),
+    const HomePage(),
+    const AchievementPage(),
+    const LeaderBoardPage(),
+    const GroupPage(),
+    const ProfilePage(),
   ];
   int _currentIndex = 0;
   @override
